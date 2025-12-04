@@ -1,0 +1,2551 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Yezgo | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="fonts/fi/flaticon.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/indent.css">
+  <link rel="stylesheet" href="rs-plugin/css/settings.css">
+  <link rel="stylesheet" href="rs-plugin/css/layers.css">
+  <link rel="stylesheet" href="rs-plugin/css/navigation.css">
+  <link rel="stylesheet" href="tuner/css/colorpicker.css">
+  <link rel="stylesheet" href="tuner/css/styles.css">
+
+  <!-- Favicons-->
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" type="image/x-icon" href="img/favicon/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72"
+    href="img/favicon/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+    href="img/favicon/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+    href="img/favicon/apple-touch-icon-144x144-precomposed.png">
+</head>
+
+<body>
+  <!--  -->
+		<!-------------------------------------------------------------------------->
+<!-- Sticky Contact Buttons -->
+<div class="sticky-contact-buttons">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919747966777?text=Hello! I would like to know more about your services" 
+       class="contact-btn whatsapp-btn" 
+       target="_blank" 
+       aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Call Button -->
+    <a href="tel:+919747966777" 
+       class="contact-btn call-btn" 
+       aria-label="Call us now">
+        <i class="fas fa-phone"></i>
+    </a>
+</div>
+
+<style>
+/* Sticky Contact Buttons */
+.sticky-contact-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.contact-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite;
+}
+
+.contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+.contact-btn:hover::before {
+    left: 100%;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-btn {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.call-btn {
+    background: linear-gradient(135deg, #4285f4, #1976d2);
+}
+.whatsapp-btn:hover{
+  color: #fff;
+
+}
+.contact-btn:hover{
+  color: #fff;
+
+}
+.contact-btn i {
+    font-size: 24px;
+}
+
+.contact-btn .btn-text {
+    display: none;
+}
+
+/* @keyframes pulse {
+    0% { 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    50% { 
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+    }
+    100% { 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sticky-contact-buttons {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: row;
+        gap: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0;
+    }
+    
+    .contact-btn {
+        flex: 1;
+        width: auto;
+        height: 60px;
+        border-radius: 0;
+        font-size: 18px;
+        animation: none;
+        box-shadow: none;
+    }
+    
+    .contact-btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .contact-btn i {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticky-contact-buttons {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: row;
+        gap: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0;
+    }
+    
+    .contact-btn {
+        flex: 1;
+        width: auto;
+        height: 55px;
+        border-radius: 0;
+        font-size: 16px;
+        animation: none;
+        box-shadow: none;
+    }
+    
+    .contact-btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .contact-btn i {
+        font-size: 22px;
+    }
+}
+
+/* Floating Style Alternative (uncomment to use) */
+/*
+.sticky-contact-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.contact-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite;
+}
+
+.contact-btn .btn-text {
+    display: none;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); }
+    50% { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); }
+    100% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); }
+}
+*/
+</style>
+
+
+
+
+
+
+
+
+
+  <!-- header page-->
+  <header>
+    <!-- Navigation panel-->
+    <nav class="main-nav transparent stick-fixed">
+      <div class="full-wrapper relative clearfix container">
+        <!-- Logo -->
+        <div class="nav-logo-wrap local-scroll">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" data-at2x="img/logo@2x.png" alt>
+            <img src="img/logo-white.png" alt class="logo-white">
+          </a>
+        </div>
+
+        <!-- Main Menu -->
+        <div class="inner-nav desktop-nav">
+          <ul class="clearlist">
+            <!-- Home -->
+            <li><a href="#" class="mn-has-sub active">Home</a></li>
+            <li class="slash">/</li>
+
+            <!-- Packages -->
+            <li><a href="#packages" class="mn-has-sub">Packages</a></li>
+            <li class="slash">/</li>
+
+            <!-- About -->
+            <li><a href="#about" class="mn-has-sub">About Us</a></li>
+            <li class="slash">/</li>
+
+            <!-- Services -->
+            <li><a href="#services" class="mn-has-sub">Services</a></li>
+            <li class="slash">/</li>
+
+
+            <!-- Gallery -->
+            <li><a href="#gallery" class="mn-has-sub">Gallery</a></li>
+            <li class="slash">/</li>
+
+            <!-- Contact -->
+            <li><a href="#contact" class="mn-has-sub">Contact Us</a></li>
+
+            <!-- Search -->
+            <!-- <li class="search"><a href="#" class="mn-has-sub">Search</a>
+              <ul class="search-sub">
+                <li>
+                  <div class="container">
+                    <div class="mn-wrap">
+                      <form method="post" class="form">
+                        <div class="search-wrap">
+                          <input type="text" placeholder="Where will you go next?" class="form-control search-field">
+                          <i class="flaticon-suntour-search search-icon"></i>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="close-button"><span>Search</span></div>
+                  </div>
+                </li>
+              </ul>
+            </li> -->
+            <!-- End Search -->
+          </ul>
+        </div>
+        <!-- End Main Menu -->
+      </div>
+    </nav>
+
+    <!-- End Navigation panel-->
+  </header>
+  <!-- ! header page-->
+  <div class="content-body">
+    <div class="row_bg">
+      <!-- bg video-->
+      <div data-video-source="4GC0jGODGeY" data-video-id="video-559a112d1873b" data-img-url="pic/video-pic+.jpg"
+        class="row_bg_video cws_Yt_video_bg">
+        <div id="video-559a112d1873b"></div>
+      </div>
+      <!-- ! bg video-->
+      <div class="content-video-bg slider">
+        <div class="tp-banner-container">
+          <div class="tp-banner">
+            <ul>
+                <li data-masterspeed="700" data-slotamount="7" data-transition="fade">
+                  <div data-x="['center','center','center','center']" data-y="center" data-transform_in="x:-150px;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:150px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="400" class="tp-caption sl-content">
+                    <div class="sl-title-top">Welcome to</div>
+                    <div class="sl-title" style="color: #ce3719;">Yez<span style="color: #184b80;">GO</span></div>
+                    <div class="sl-title-bot">Tours</div>
+                  </div>
+                </li>
+            <li data-masterspeed="700" data-transition="fade">
+                  <div data-x="['center','center','center','center']" data-y="center" data-transform_in="y:-150px;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:150px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="400" class="tp-caption sl-content">
+                    <div class="sl-title-top">Welcome to</div>
+                    <div class="sl-title" style="color: #ce3719;">Yez<span style="color: #184b80;">GO</span></div>
+                    <div class="sl-title-bot">Tours</div>
+                  </div>
+                </li>
+                <li data-masterspeed="700" data-transition="fade">
+                  <div data-x="['center','center','center','center']" data-y="center" data-transform_in="x:150px;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:-150px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="400" class="tp-caption sl-content">
+                    <div class="sl-title-top">Welcome to</div>
+                    <div class="sl-title" style="color: #ce3719;">Yez<span style="color: #184b80;">GO</span></div>
+                    <div class="sl-title-bot">Tours</div>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- slider info-->
+
+      <!-- ! slider-info-->
+    </div>
+    <!-- page section------------------------------------------------------------------>
+    <section id="packages" class="page-section pb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h6 class="title-section-top font-4">Packages</h6>
+            <h2 class="title-section"><span>Our</span> Travel Packages</h2>
+            <div class="cws_divider mb-25 mt-5"></div>
+            <p>Explore the world with our handpicked travel packages — from the iconic landmarks of the USA to the
+              vibrant colors of Asia, Europe, and beyond. Discover culture, beauty, and adventure with every
+              destination.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="pic/promo-1@2x.png" data-at2x="pic/promo-1@2x.png" alt class="mt-md-0 mt-minus-70">
+          </div>
+        </div>
+      </div>
+
+      <div class="features-tours-full-width">
+        <div class="features-tours-wrap clearfix" id="toursContainer">
+
+          <!-- 1 -->
+          <div class="features-tours-item tour-item">
+            <div class="features-media">
+              <img src="./img/tour/GRAND TOUR OF USA.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Experience the ultimate journey through the United States — from New York’s skyline
+                  to the Grand Canyon’s vast beauty.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>GRAND TOUR OF USA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="features-tours-item tour-item">
+            <div class="features-media">
+              <img src="./img/tour/MAGINIFICANT USA.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Discover America’s most stunning destinations — a blend of cities, coastlines, and
+                  countryside charm.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>MAGNIFICENT USA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="features-tours-item tour-item">
+            <div class="features-media">
+              <img src="./img/tour/EXCLUSSIVE UK AND EUROP.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Travel across the royal landscapes of the UK and Europe — from London’s charm to
+                  Parisian elegance.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>EXCLUSIVE UK AND
+                    EUROPE
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="features-tours-item tour-item">
+            <div class="features-media">
+              <img src="./img/tour/COLOURS OF EUROP.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Enjoy a colorful journey through Europe’s heritage — vibrant cities, scenic lakes,
+                  and timeless architecture.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>COLOURS OF EUROPE
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="features-tours-item tour-item">
+            <div class="features-media">
+              <img src="./img/tour/DELHI,AGRA.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Explore India’s Golden Triangle — Delhi’s charm, Agra’s Taj Mahal, and Jaipur’s
+                  royal heritage.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>DELHI, AGRA JAIPUR
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="features-tours-item tour-item">
+            <div class="features-media">
+              <img src="./img/tour/kulumanali.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Experience the breathtaking valleys and snow-capped mountains of Kulu Manali — a
+                  true Himalayan escape.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>KULU MANALI
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="features-tours-item tour-item">
+            <div class="features-media">
+              <img src="./img/tour/RUSSIA AND SCANDINAVA.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Discover the beauty of Russia and the stunning Nordic charm of Scandinavia in one
+                  remarkable trip.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>RUSSIA AND SCANDINAVIA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="features-tours-item tour-item">
+            <div class="features-media">
+              <img src="./img/tour/SIGAPOREWITHCRUISI.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Sail through Singapore’s modern skyline and enjoy a luxury cruise adventure like no
+                  other.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>SINGAPORE WITH CRUISE
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hidden destinations (show on Load More) -->
+          <!-- Copy pattern below for each -->
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/WONDERS OF RUSSIA.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Marvel at the incredible architecture and heritage of Russia — from Moscow to St.
+                  Petersburg.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>WONDERS OF RUSSIA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/MALAYISA AND THAILAND.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Enjoy tropical vibes, street food, and cultural beauty in Malaysia and Thailand.
+                </p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i>MALAYSIA THAILAND
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!-- Updated Travel Package Section ------------------------>
+
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/FASCINATNG PHILIPPINI.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Uncover the Philippines’ white beaches, friendly culture, and stunning island
+                  landscapes.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> FASCINATING
+                    PHILIPPINES
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/MAJESTIC HYDERABAD.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Step into the royal city of pearls, where heritage meets modern charm.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> MAJESTIC HYDERABAD
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="features-tours-item tour-item" style="display:none;">
+  <div class="features-media">
+    <img src="./pic/tours/1@2x.jpg" alt="">
+    <div class="features-info-top">
+      <p class="info-text">Travel through the Mediterranean charm of Spain, the history of Portugal, and the exotic colors of Morocco.</p>
+    </div>
+    <div class="features-info-bot">
+       <h4 class="title">
+        <span class="font-4">
+          <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> SPAIN, PORTUGAL MOROCCO
+        </span>
+      </h4>
+      <a href="#" class="button">Details</a>
+    </div>
+    <div class="features-info-bot">
+      <h4 class="title"><span class="font-4">SPAIN, PORTUGAL MOROCCO</span></h4>
+      <a href="#" class="button">Details</a>
+    </div>
+  </div>
+</div> -->
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/AMAZING GOA.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Unwind on golden beaches, enjoy vibrant nightlife, and experience the coastal charm
+                  of Goa.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> AMAZING GOA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/CHINA WITH MALAYSIA.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Explore ancient wonders in China and modern marvels in Malaysia on this enriching
+                  dual-country journey.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> CHINA WITH MALAYSIA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/SURPRISING SOUTH AFRICA.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">From safaris to scenic coasts, experience the thrill and beauty of South Africa’s
+                  diverse landscapes.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> SURPRISING SOUTH
+                    AFRICA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/AUSTRALIA&NEW ZELAND.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Witness the wonders of Down Under — Sydney’s skyline, New Zealand’s mountains, and
+                  much more.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> AUSTRALIA & NEW
+                    ZEALAND
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/CHINA WONDERS.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Discover the perfect blend of tradition and modernity across China, Macau, and Hong
+                  Kong.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> CHINA, MACAU HONGKONG
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/AMAZING THAILAND.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Experience Thailand’s temples, beaches, and bustling markets — a land of smiles and
+                  surprises.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> AMAZING THAILAND
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/MALAYSIA TRULY ASIA.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Discover the multicultural essence of Asia in Malaysia — from city lights to serene
+                  islands.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> MALAYSIA TRULY ASIA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/CHINA WONDERS.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Marvel at China’s ancient history, majestic Great Wall, and dynamic cities full of
+                  life.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> CHINA WONDERS
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/SCENIC VIETNAM.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Enjoy breathtaking landscapes, floating markets, and rich traditions in the heart
+                  of Vietnam.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> SCENIC VIETNAM
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/DAZZLING DUBAI.webp" alt="">
+              <div class="features-info-top">
+                <p class="info-text">Experience futuristic architecture, desert adventures, and luxury shopping in
+                  Dubai.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> DAZZLING DUBAI
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/SINGAPORE MALAYSIA.webp" alt="Singapore Malaysia">
+              <div class="features-info-top">
+                <p class="info-text">Explore the vibrant cities of Singapore and Malaysia for a mix of tradition and
+                  modernity.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> SINGAPORE MALAYSIA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/FASCINATNG PHILIPPINI.webp" alt="Fascinating Philippines">
+              <div class="features-info-top">
+                <p class="info-text">Uncover the Philippines’ white beaches, friendly culture, and stunning island
+                  landscapes.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> FASCINATING
+                    PHILIPPINES
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/MAJESTIC HYDERABAD.webp" alt="Majestic Hyderabad">
+              <div class="features-info-top">
+                <p class="info-text">Step into the royal city of pearls, where heritage meets modern charm.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> MAJESTIC HYDERABAD
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Continue All Other Destinations in Same Format -------------------------------------------------->
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/SPAIN.PORTUGAL.webp" alt="Spain, Portugal Morocco">
+              <div class="features-info-top">
+                <p class="info-text">Travel through the Mediterranean charm of Spain, the history of Portugal, and the
+                  exotic colors of Morocco.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> SPAIN, PORTUGAL
+                    MOROCCO
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/AMAZING GOA.webp" alt="Amazing Goa">
+              <div class="features-info-top">
+                <p class="info-text">Unwind on golden beaches, enjoy vibrant nightlife, and experience the coastal charm
+                  of Goa.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> AMAZING GOA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/CHINA WITH MALAYSIA.webp" alt="China with Malaysia">
+              <div class="features-info-top">
+                <p class="info-text">Explore ancient wonders in China and modern marvels in Malaysia on this enriching
+                  dual-country journey.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> CHINA WITH MALAYSIA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/SURPRISING SOUTH AFRICA.webp" alt="Surprising South Africa">
+              <div class="features-info-top">
+                <p class="info-text">From safaris to scenic coasts, experience the thrill and beauty of South Africa’s
+                  diverse landscapes.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> SURPRISING SOUTH
+                    AFRICA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/AUSTRALIA&NEW ZELAND.webp" alt="Australia & New Zealand">
+              <div class="features-info-top">
+                <p class="info-text">Witness the wonders of Down Under — Sydney’s skyline, New Zealand’s mountains, and
+                  much more.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> AUSTRALIA & NEW
+                    ZEALAND
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/JAPAN LAND OF RISING.webp" alt="Japan Land of Rising Sun">
+              <div class="features-info-top">
+                <p class="info-text">Immerse yourself in Japan’s culture, cherry blossoms, and technological wonders.
+                </p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> JAPAN LAND OF RISING
+                    SUN
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/ARMENIANA DELIGHTS.webp" alt="Exquisite Turkey">
+              <div class="features-info-top">
+                <p class="info-text">Step into history with Istanbul’s charm, Cappadocia’s caves, and Mediterranean
+                  beauty.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> EXQUISITE TURKEY
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="img/tour/AGRA,DELHI.JAIPUR.webp" alt="Agra, Delhi Jaipur">
+              <div class="features-info-top">
+                <p class="info-text">Witness the Taj Mahal, Red Fort, and royal palaces in India’s cultural triangle.
+                </p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> AGRA, DELHI JAIPUR
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/SCANDINAVIA.webp" alt="Scandinavia">
+              <div class="features-info-top">
+                <p class="info-text">Experience the natural beauty and modern charm of Norway, Sweden, and Denmark.</p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> SCANDINAVIA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-tours-item tour-item" style="display:none;">
+            <div class="features-media">
+              <img src="./img/tour/MALAYSIA.webp" alt="Malaysia">
+              <div class="features-info-top">
+                <p class="info-text">From Kuala Lumpur’s skyline to tropical islands, discover the essence of Malaysia.
+                </p>
+              </div>
+              <div class="features-info-bot">
+                <h4 class="title">
+                  <span class="font-4">
+                    <i class="fa-solid fa-location-dot" style="color:#fff; margin-right:6px;"></i> MALAYSIA
+                  </span>
+                </h4>
+                <a href="#" class="button">Details</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Load More Button -->
+        <div style="text-align: center; margin: 50px 0; padding: 20px;">
+          <button id="loadMoreBtn" class="load-more-button">
+            <span class="button-text">View More Destinations</span>
+            <span class="button-icon">▼</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CSS Styles for Load More Button -->
+    <style>
+      .load-more-button {
+        position: relative;
+        padding: 10px 30px;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ce3719;
+        background: #fff;
+        /* background: rgba(102, 126, 234, 0.1); */
+        border: 2px solid #ce3719;
+        border-radius: 30px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        /* backdrop-filter: blur(10px); */
+      }
+
+      .load-more-button:hover {
+        transform: translateY(-2px);
+        /* background: rgba(102, 126, 234, 0.2); */
+        border-color: #ce3719;
+        /* box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2); */
+      }
+
+      .load-more-button:active {
+        transform: translateY(0px);
+        /* background: rgba(102, 126, 234, 0.25); */
+      }
+
+      .button-icon {
+        font-size: 12px;
+        transition: transform 0.3s ease;
+        display: inline-block;
+      }
+
+      .load-more-button:hover .button-icon {
+        transform: translateY(3px);
+        animation: bounce 0.6s ease infinite;
+      }
+
+      @keyframes bounce {
+
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(5px);
+        }
+      }
+
+      .load-more-button.hidden {
+        display: none;
+      }
+
+      /* Fade in animation for new items */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .tour-item.fade-in {
+        animation: fadeInUp 0.6s ease forwards;
+      }
+    </style>
+
+    <!-- JavaScript for Load More Functionality -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const tourItems = document.querySelectorAll('.tour-item');
+        let currentVisible = 8;
+        const itemsPerLoad = 4;
+
+        // Function to show more items
+        function loadMore() {
+          let newVisible = currentVisible + itemsPerLoad;
+
+          // Show next batch of items
+          for (let i = currentVisible; i < newVisible && i < tourItems.length; i++) {
+            tourItems[i].style.display = 'block';
+            tourItems[i].classList.add('fade-in');
+          }
+
+          currentVisible = newVisible;
+
+          // Hide button if all items are visible
+          if (currentVisible >= tourItems.length) {
+            loadMoreBtn.style.display = 'none';
+          }
+
+          // Smooth scroll to new content
+          setTimeout(() => {
+            tourItems[currentVisible - itemsPerLoad].scrollIntoView({
+              behavior: 'smooth',
+              block: 'center'
+            });
+          }, 100);
+        }
+
+        // Event listener for load more button
+        loadMoreBtn.addEventListener('click', loadMore);
+      });
+    </script>
+    <!-- ! page section-------------------------------------------------------------->
+    <!-- counter section -->
+    <section class="small-section" style="padding-top: 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-xs-6 mb-md-30">
+            <div class="counter-block"><i class="counter-icon flaticon-suntour-world"></i>
+              <div class="counter-name-wrap">
+                <div data-count="345" class="counter">0</div>
+                <div class="counter-name">Tours</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-6 mb-md-30">
+            <div class="counter-block with-divider"><i class="counter-icon flaticon-suntour-fireworks"></i>
+              <div class="counter-name-wrap">
+                <div data-count="438" class="counter">0</div>
+                <div class="counter-name">Holidays</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-6 mb-md-30">
+            <div class="counter-block with-divider"><i class="counter-icon flaticon-suntour-hotel"></i>
+              <div class="counter-name-wrap">
+                <div data-count="526" class="counter">0</div>
+                <div class="counter-name">Hotels</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-6 mb-md-30">
+            <div class="counter-block with-divider"><i class="counter-icon flaticon-suntour-ship"></i>
+              <div class="counter-name-wrap">
+                <div data-count="169" class="counter">0</div>
+                <div class="counter-name">Cruises</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-6">
+            <div class="counter-block with-divider"><i class="counter-icon flaticon-suntour-airplane"></i>
+              <div class="counter-name-wrap">
+                <div data-count="293" class="counter">0</div>
+                <div class="counter-name">Flights</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-6">
+            <div class="counter-block with-divider"><i class="counter-icon flaticon-suntour-car"></i>
+              <div class="counter-name-wrap">
+                <div data-count="675" class="counter">0</div>
+                <div class="counter-name">Cars</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ! counter section-->
+    <!-- \about section------------------------------>
+    <!-- About Section - Fully Responsive -->
+    <section id="about" class="yezgo-about-section"
+      style="background-color: #ffffff; padding: 80px 0; overflow: hidden;">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side - Images -->
+          <div class="col-lg-6 mb-5 mb-lg-0" style="background-image: url('./img/about-img/pattern.png'); 
+            background-size: cover; 
+            background-position: center;">
+            <div class="yezgo-image-wrapper" style="position: relative; height: 600px; width: 100%;">
+              <!-- Large Image Top Left -->
+              <div class="yezgo-img-box yezgo-img-primary"
+                style="position: absolute; top: 0; left: 0; width: 52%; height: 52%; background-color: #184b80; border-radius: 15px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); z-index: 1; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
+                <img src="./img/gallery/paris.webp" alt="YEZ GO Travel" class="yezgo-image-fill"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+                <div
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(44, 62, 80, 0.3) 0%, rgba(52, 73, 94, 0.1) 100%);">
+                </div>
+              </div>
+
+              <!-- Medium Image Center -->
+              <div class="yezgo-img-box yezgo-img-secondary"
+                style="position: absolute; top: 25%; right: 0; width: 58%; height: 58%; background-color: #184b80; border-radius: 15px; overflow: hidden; box-shadow: 0 25px 60px rgba(0,0,0,0.18); z-index: 3; border: 8px solid #ffffff; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
+                <img src="./img/gallery/tailand.webp" alt="Travel Experience" class="yezgo-image-fill"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+
+              <!-- Small Image Bottom Left -->
+              <div class="yezgo-img-box yezgo-img-tertiary"
+                style="position: absolute; bottom: 0; left: 5%; width: 45%; height: 45%; background-color: #184b80; border-radius: 15px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); z-index: 2; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
+                <img src="./img/gallery/china.webp" alt="Destination" class="yezgo-image-fill"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+                <div
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(70, 87, 102, 0.2) 0%, rgba(90, 108, 125, 0.1) 100%);">
+                </div>
+              </div>
+
+              <!-- Decorative Pattern -->
+              <div class="yezgo-pattern-dots"
+                style="position: absolute; bottom: -20px; right: -20px; width: 100px; height: 100px; z-index: 1; opacity: 0.5;">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <circle cx="2" cy="2" r="2" fill="#ecf0f1" />
+                    </pattern>
+                  </defs>
+                  <rect width="100" height="100" fill="url(#dots)" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side - Content -->
+          <div class="col-lg-6">
+            <div class="yezgo-about-content" style="padding-left: 30px;">
+              <h6 class="title-section-top font-4"
+                style="color: #ce3719; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">
+                About us</h6>
+              <h2 class="title-section"
+                style="font-size: 34px; font-weight: 400; color: #2c3e50; line-height: 1.3; margin-bottom: 20px;"><span
+                  style="color: #2c3e50;">Our</span> Tours Bring You<br>The Best Experience in Travel</h2>
+              <div class="cws_divider mb-25 mt-5"></div>
+              <p class="yezgo-description"
+                style="font-size: 16px; line-height: 1.9; color: #7f8c8d; margin-bottom: 35px;">
+                With 15 years of experience in the Tourism industry, we are dedicated to creating journeys filled with
+                adventure, culture, and comfort, making every destination unforgettable. We assure quality services for
+                all our products so that you can have a memorable holiday experience.
+              </p>
+
+              <!-- Feature Boxes Grid -->
+              <div class="yezgo-features-grid" style="display: flex; flex-direction: column; gap: 15px;">
+                <!-- Row 1 -->
+                <div class="yezgo-feature-row" style="display: flex; gap: 15px;">
+                  <div class="yezgo-feature-item"
+                    style="flex: 1; display: flex; align-items: center; padding: 18px; background-color: #f8f9fa; border-radius: 10px; border-left: 4px solid #184b80; transition: all 0.3s ease;">
+                    <div class="yezgo-feature-icon"
+                      style="width: 48px; height: 48px; background-color: #ce3719; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                      <i class="fa fa-shield" style="color: #ffffff; font-size: 20px;"></i>
+                    </div>
+                    <span class="yezgo-feature-label"
+                      style="font-weight: 600; color: #184b80; font-size: 14px; line-height: 1.4;">Trusted Travel
+                      Guide</span>
+                  </div>
+
+                  <div class="yezgo-feature-item"
+                    style="flex: 1; display: flex; align-items: center; padding: 18px; background-color: #f8f9fa; border-radius: 10px; border-left: 4px solid #184b80; transition: all 0.3s ease;">
+                    <div class="yezgo-feature-icon"
+                      style="width: 48px; height: 48px; background-color: #ce3719; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                      <i class="fa fa-globe" style="color: #ffffff; font-size: 20px;"></i>
+                    </div>
+                    <span class="yezgo-feature-label"
+                      style="font-weight: 600; color: #184b80; font-size: 14px; line-height: 1.4;">World Class
+                      Travel</span>
+                  </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="yezgo-feature-row" style="display: flex; gap: 15px;">
+                  <div class="yezgo-feature-item"
+                    style="flex: 1; display: flex; align-items: center; padding: 18px; background-color: #f8f9fa; border-radius: 10px; border-left: 4px solid #184b80; transition: all 0.3s ease;">
+                    <div class="yezgo-feature-icon"
+                      style="width: 48px; height: 48px; background-color: #ce3719; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                      <i class="fa fa-calendar" style="color: #ffffff; font-size: 20px;"></i>
+                    </div>
+                    <span class="yezgo-feature-label"
+                      style="font-weight: 600; color: #184b80; font-size: 14px; line-height: 1.4;">Instant
+                      Booking</span>
+                  </div>
+
+                  <div class="yezgo-feature-item"
+                    style="flex: 1; display: flex; align-items: center; padding: 18px; background-color: #f8f9fa; border-radius: 10px; border-left: 4px solid #184b80; transition: all 0.3s ease;">
+                    <div class="yezgo-feature-icon"
+                      style="width: 48px; height: 48px; background-color: #ce3719; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                      <i class="fa fa-umbrella" style="color: #ffffff; font-size: 20px;"></i>
+                    </div>
+                    <span class="yezgo-feature-label"
+                      style="font-weight: 600; color: #184b80; font-size: 14px; line-height: 1.4;">Adventure
+                      Tours</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Responsive Styles -->
+    <style>
+      /* Hover Effects */
+      .yezgo-feature-item:hover {
+        transform: translateX(8px);
+        background-color: #ffffff;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .yezgo-img-box:hover {
+        transform: scale(1.05) rotate(2deg);
+        z-index: 10 !important;
+      }
+
+      .yezgo-img-secondary:hover {
+        transform: scale(1.05) rotate(-2deg);
+      }
+
+      /* Large Tablets and Below (max-width: 991px) */
+      @media (max-width: 991px) {
+        .yezgo-about-section {
+          padding: 60px 0 !important;
+        }
+
+        .yezgo-image-wrapper {
+          height: 450px !important;
+          margin-bottom: 40px;
+        }
+
+        .yezgo-about-content {
+          padding-left: 0 !important;
+        }
+
+        .title-section {
+          font-size: 2.4rem !important;
+        }
+      }
+
+      /* Tablets (max-width: 768px) */
+      @media (max-width: 768px) {
+        .yezgo-about-section {
+          padding: 50px 0 !important;
+        }
+
+        .yezgo-image-wrapper {
+          height: 400px !important;
+        }
+
+        /* Adjust image boxes */
+        .yezgo-img-primary {
+          width: 55% !important;
+          height: 48% !important;
+        }
+
+        .yezgo-img-secondary {
+          width: 60% !important;
+          height: 55% !important;
+          top: 22% !important;
+          border: 6px solid #ffffff !important;
+        }
+
+        .yezgo-img-tertiary {
+          width: 48% !important;
+          height: 42% !important;
+          left: 3% !important;
+        }
+
+        .title-section {
+          font-size: 2.2rem !important;
+        }
+
+        .title-section br {
+          display: none;
+        }
+
+        .yezgo-description {
+          font-size: 15px !important;
+          margin-bottom: 25px !important;
+        }
+
+        /* Stack feature items */
+        .yezgo-feature-row {
+          flex-direction: column !important;
+        }
+
+        .yezgo-feature-item {
+          width: 100%;
+        }
+
+        .yezgo-pattern-dots {
+          display: none !important;
+        }
+      }
+
+      /* Mobile Devices (max-width: 576px) */
+      @media (max-width: 576px) {
+        .yezgo-about-section {
+          padding: 40px 0 !important;
+        }
+
+        .yezgo-image-wrapper {
+          height: 350px !important;
+        }
+
+        /* Mobile optimized image layout */
+        .yezgo-img-primary {
+          width: 58% !important;
+          height: 45% !important;
+        }
+
+        .yezgo-img-secondary {
+          width: 65% !important;
+          height: 52% !important;
+          top: 20% !important;
+          border: 5px solid #ffffff !important;
+        }
+
+        .yezgo-img-tertiary {
+          width: 50% !important;
+          height: 40% !important;
+          left: 0 !important;
+        }
+
+        .title-section-top {
+          font-size: 12px !important;
+          letter-spacing: 1.5px !important;
+        }
+
+        .title-section {
+          font-size: 1.8rem !important;
+          line-height: 1.2 !important;
+        }
+
+        .cws_divider {
+          width: 60px !important;
+          height: 3px !important;
+        }
+
+        .yezgo-description {
+          font-size: 14px !important;
+          line-height: 1.7 !important;
+          margin-bottom: 20px !important;
+        }
+
+        .yezgo-features-grid {
+          gap: 12px !important;
+        }
+
+        .yezgo-feature-row {
+          gap: 12px !important;
+        }
+
+        .yezgo-feature-item {
+          padding: 15px !important;
+          border-left-width: 3px !important;
+        }
+
+        .yezgo-feature-icon {
+          width: 42px !important;
+          height: 42px !important;
+          margin-right: 12px !important;
+        }
+
+        .yezgo-feature-icon i {
+          font-size: 18px !important;
+        }
+
+        .yezgo-feature-label {
+          font-size: 13px !important;
+        }
+
+        /* Disable hover effects on mobile */
+        .yezgo-feature-item:hover {
+          transform: none !important;
+        }
+
+        .yezgo-img-box:hover {
+          transform: none !important;
+        }
+      }
+
+      /* Extra Small Devices (max-width: 400px) */
+      @media (max-width: 400px) {
+        .yezgo-about-section {
+          padding: 30px 0 !important;
+        }
+
+        .yezgo-image-wrapper {
+          height: 300px !important;
+        }
+
+        .title-section {
+          font-size: 1.6rem !important;
+        }
+
+        .yezgo-description {
+          font-size: 13px !important;
+        }
+
+        .yezgo-feature-item {
+          padding: 12px !important;
+        }
+
+        .yezgo-feature-icon {
+          width: 38px !important;
+          height: 38px !important;
+        }
+
+        .yezgo-feature-icon i {
+          font-size: 16px !important;
+        }
+
+        .yezgo-feature-label {
+          font-size: 12px !important;
+        }
+      }
+
+      /* Landscape Mobile Devices */
+      @media (max-height: 500px) and (orientation: landscape) {
+        .yezgo-about-section {
+          padding: 30px 0 !important;
+        }
+
+        .yezgo-image-wrapper {
+          height: 280px !important;
+        }
+      }
+    </style>
+    <!-- ! end about -->
+    <!-- recomended section-->
+    <section id="services" class="small-section bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h6 class="title-section-top font-4">Our Services</h6>
+            <h2 class="title-section"><span>Main</span> Facilities</h2>
+            <div class="cws_divider mb-25 mt-5"></div>
+            <p>
+              We provide comprehensive travel solutions including visa assistance, hotel reservations,
+              air ticket booking, and customized tour packages for domestic, international, and pilgrimage destinations.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="flaticon-suntour-hotel title-icon"></i>
+          </div>
+        </div>
+
+        <div class="row" id="facilitiesContainer">
+          <!-- Visible items (6 total) -->
+          <div class="col-md-4 facility-item">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/passport-assist.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Passport Assistance</h6>
+                <p>Complete support for passport application, renewal, and documentation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/visa-assist.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Visa Assistance</h6>
+                <p>Expert guidance for visa applications and documentation for all countries.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/cirtificate-assist.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Certificate Attestation</h6>
+                <p>Attestation services for educational, personal, and commercial certificates.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/travall-ic.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Travel Insurance</h6>
+                <p>Comprehensive travel insurance for domestic and international trips.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/hotel-assist.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Hotel Reservation</h6>
+                <p>Best deals on hotel bookings worldwide with verified properties.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/airlin-ticket.jpg" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Air Ticket Booking</h6>
+                <p>Competitive airfare rates for domestic and international flights.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hidden items -->
+          <div class="col-md-4 facility-item hidden-item" style="display: none;">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/traval-assist.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Travel Assistance</h6>
+                <p>24/7 travel support and assistance for all your travel needs and emergencies.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item hidden-item" style="display: none;">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/domatic&international.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Domestic & International Tours</h6>
+                <p>Customized tour packages for both domestic and international destinations.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item hidden-item" style="display: none;">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/pilgril.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Pilgrimage Tours</h6>
+                <p>Spiritual tour packages to holy destinations with complete arrangements.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item hidden-item" style="display: none;">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/destination-expe.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Destination Expertise</h6>
+                <p>Expert insights to help plan your perfect travel experience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item hidden-item" style="display: none;">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/family-indepent-tour.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Family Independent Tours</h6>
+                <p>Personalized family vacation packages with flexible itineraries.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 facility-item hidden-item" style="display: none;">
+            <div class="recom-item">
+              <div class="recom-media">
+                <div class="pic"><img src="./img/facilities/group-corparate.webp" alt=""></div>
+              </div>
+              <div class="recom-item-body">
+                <h6 class="blog-title">Group & Corporate Travel</h6>
+                <p>Specialized packages for group tours and corporate travel services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center my-5">
+          <button id="viewMoreBtn" class="view-more-button">
+            <span class="button-text">View More Facilities</span>
+            <span class="button-icon">▼</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .view-more-button {
+        padding: 10px 30px;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ce3719;
+        background: #fff;
+        border: 2px solid #ce3719;
+        border-radius: 30px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+      }
+
+      .view-more-button:hover {
+        transform: translateY(-2px);
+        background: #fff;
+        border-color: #ce3719;
+        /* box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2); */
+      }
+
+      .view-more-button:disabled {
+        cursor: not-allowed;
+        opacity: 0.7;
+      }
+
+      .button-icon {
+        font-size: 12px;
+        transition: transform 0.3s ease;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .facility-item.fade-in {
+        animation: fadeInUp 0.6s ease forwards;
+      }
+    </style>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('viewMoreBtn');
+        const hiddenItems = document.querySelectorAll('.hidden-item');
+        const itemsPerClick = 3;
+        let shownCount = 0;
+
+        if (!btn || hiddenItems.length === 0) {
+          if (btn) btn.style.display = 'none';
+          return;
+        }
+
+        btn.addEventListener('click', () => {
+          btn.disabled = true;
+          btn.innerHTML = '<span class="button-text">Loading...</span>';
+
+          setTimeout(() => {
+            const toShow = Array.from(hiddenItems).slice(shownCount, shownCount + itemsPerClick);
+            toShow.forEach((item, i) => {
+              setTimeout(() => {
+                item.style.display = 'block';
+                item.classList.add('fade-in');
+              }, i * 150);
+            });
+
+            shownCount += toShow.length;
+            btn.disabled = false;
+
+            if (shownCount >= hiddenItems.length) {
+              btn.innerHTML = '<span class="button-text">All Facilities Loaded</span>';
+              setTimeout(() => btn.style.display = 'none', 1500);
+            } else {
+              btn.innerHTML = '<span class="button-text">View More Facilities</span><span class="button-icon">▼</span>';
+            }
+          }, 400);
+        });
+      });
+    </script>
+
+
+
+    <!-- ! recomended section-->
+    <!-- testimonials section-->
+    <section id="testimonial" class="small-section cws_prlx_section bg-blue-40"><img src="pic/parallax-2.jpg" alt
+        class="cws_prlx_layer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h6 class="title-section-top font-4">Happy Memories</h6>
+            <h2 class="title-section alt-2"><span>Our</span> Testimonials</h2>
+            <div class="cws_divider mb-25 mt-5"></div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- testimonial carousel-->
+          <div class="owl-three-item">
+            <!-- testimonial item-->
+            <div class="testimonial-item">
+              <div class="testimonial-top"><a href="hotels-details.html">
+                  <div class="pic"><img src="./img/testmonial/testimonial-bg/erp-2.webp"
+                      data-at2x="./img/testmonial/testimonial-bg/erp.webp" alt></div>
+                </a>
+                <div class="author"><img src="./img/testmonial/profile-2.jpg" data-at2x="./img/testmonial/profile-2.jpg"
+                    style="width: 130px;" alt></div>
+              </div>
+              <!-- testimonial content-->
+              <div class="testimonial-body">
+                <h5 class="title"><span>Emily</span> Jacob</h5>
+                <div class="stars stars-5"></div>
+                <p class="align-center">“Our Europe trip with YEZ GO was absolutely magical! Everything from flights to
+                  hotel
+                  bookings was managed so smoothly. The ‘Colours of Europe’ tour gave us the perfect mix of culture,
+                  architecture,
+                  and leisure. Truly a five-star experience!”</p>
+
+              </div>
+            </div>
+
+            <!-- testimonial item-->
+            <div class="testimonial-item">
+              <div class="testimonial-top"><a href="hotels-details.html">
+                  <div class="pic"><img src="./img/testmonial/testimonial-bg/mlsia.webp"
+                      data-at2x="./img/testmonial/testimonial-bg/mlsia.webp" alt></div>
+                </a>
+                <div class="author"><img src="./img/testmonial/profile-2.jpg" data-at2x="./img/testmonial/profile-2.jpg"
+                    style="width: 130px;" alt></div>
+              </div>
+              <!-- testimonial content-->
+              <div class="testimonial-body">
+                <h5 class="title"><span>Rahul</span> Menon</h5>
+                <div class="stars stars-5"></div>
+                <p class="align-center">“I travelled to Singapore and Malaysia through YEZ GO, and it was one of the
+                  best travel
+                  experiences I’ve ever had. The itinerary was well-planned, guides were professional, and every day
+                  felt
+                  effortless. Thank you for making my first international trip so memorable!”</p>
+
+              </div>
+            </div>
+
+            <!-- testimonial item-->
+            <div class="testimonial-item">
+              <div class="testimonial-top"><a href="hotels-details.html">
+                  <div class="pic"><img src="./img/testmonial/testimonial-bg/thailand.webp"
+                      data-at2x="./img/testmonial/testimonial-bg/thailand.webp" alt></div>
+                </a>
+                <div class="author"><img src="./img/testmonial/profile-2.jpg" data-at2x="./img/testmonial/profile-2.jpg"
+                    style="width: 130px;" alt></div>
+              </div>
+              <!-- testimonial content-->
+              <div class="testimonial-body">
+                <h5 class="title"><span>Sarah</span> Thompson</h5>
+                <div class="stars stars-5"></div>
+                <p class="align-center">“I joined the ‘Scenic Vietnam & Thailand’ package and was amazed by their
+                  professionalism.
+                  The transfers were on time, accommodations were excellent, and the tour felt safe and well-managed.
+                  Highly
+                  recommend them for Asia tours!”</p>
+
+              </div>
+            </div>
+
+            <!-- testimonial item-->
+            <div class="testimonial-item">
+              <div class="testimonial-top"><a href="hotels-details.html">
+                  <div class="pic"><img src="./img/testmonial/testimonial-bg/burghalifa.webp"
+                      data-at2x="./img/testmonial/testimonial-bg/burghalifa.webp" alt></div>
+                </a>
+                <div class="author"><img src="./img/testmonial/profile-2.jpg" data-at2x="./img/testmonial/profile-2.jpg"
+                    style="width: 130px;" alt></div>
+              </div>
+              <!-- testimonial content-->
+              <div class="testimonial-body">
+                <h5 class="title"><span>Arjun</span> Patel</h5>
+                <div class="stars stars-5"></div>
+                <p class="align-center">“From desert safari to Burj Khalifa tickets, everything was handled flawlessly.
+                  Their 15
+                  years of travel experience really reflects in how smoothly they organize everything.”</p>
+              </div>
+            </div>
+
+            <!-- testimonial item-->
+            <div class="testimonial-item">
+              <div class="testimonial-top"><a href="hotels-details.html">
+                  <div class="pic"><img src="./img/testmonial/testimonial-bg/thailand.webp"
+                      data-at2x="./img/testmonial/testimonial-bg/thailand.webp" alt></div>
+                </a>
+                <div class="author"><img src="./img/testmonial/profile-2.jpg" data-at2x="./img/testmonial/profile-2.jpg"
+                    style="width: 130px;" alt></div>
+              </div>
+              <!-- testimonial content-->
+              <div class="testimonial-body">
+                <h5 class="title"><span>Michelle</span> Fernandes</h5>
+                <div class="stars stars-5"></div>
+                <p class="align-center">“We chose YEZ GO for our honeymoon in Bali, and it was the best decision ever.
+                  The package
+                  included beautiful private stays, island tours, and candlelight dinners — all arranged so seamlessly.
+                  It felt
+                  luxurious yet affordable!”</p>
+
+              </div>
+            </div>
+
+            <!-- testimonial item-->
+            <div class="testimonial-item">
+              <div class="testimonial-top"><a href="hotels-details.html">
+                  <div class="pic"><img src="./img/testmonial/testimonial-bg/bg-4.webp"
+                      data-at2x="./img/testmonial/testimonial-bg/bg-4.webp" alt></div>
+                </a>
+                <div class="author"><img src="./img/testmonial/profile-2.jpg" data-at2x="./img/testmonial/profile-2.jpg"
+                    style="width: 130px;" alt></div>
+              </div>
+              <!-- testimonial content-->
+              <div class="testimonial-body">
+                <h5 class="title"><span>Daniel</span> Wong</h5>
+                <div class="stars stars-5"></div>
+                <p class="align-center">“Our group had travelers from different countries, but the coordination was
+                  amazing. The
+                  tour manager was professional, and the experience felt personal and well taken care of.”</p>
+              </div>
+            </div>
+
+            <!-- testimonial item-->
+            <div class="testimonial-item">
+              <div class="testimonial-top"><a href="">
+                  <div class="pic"><img src="./img/testmonial/testimonial-bg/usa.webp"
+                      data-at2x="./img/testmonial/testimonial-bg/usa.webp" alt></div>
+                </a>
+                <div class="author"><img src="./img/testmonial/profile-2.jpg" data-at2x="./img/testmonial/profile-2.jpg"
+                    style="width: 120px;" alt></div>
+              </div>
+              <!-- testimonial content-->
+              <div class="testimonial-body">
+                <h5 class="title"><span>Neha</span> Sharma</h5>
+                <div class="stars stars-5"></div>
+                <p class="align-center">“I recently did the ‘Grand Tour of USA’ with YEZ GO, and it was a dream come
+                  true! Every
+                  city, from New York to San Francisco, was planned beautifully. Thank you Team.”</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ! testimonials section-->
+    <!-- gallery section-->
+    <section id="gallery" class="small-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h6 class="title-section-top font-4">Happy Memories</h6>
+            <h2 class="title-section"><span>Photo</span> Gallery</h2>
+            <div class="cws_divider mb-25 mt-5"></div>
+            <p>Discover the unforgettable moments from our journeys! At Yezgo Tours & Travels, every trip is filled with
+              smiles, adventure, and beautiful destinations. Explore our gallery and relive the joy of travel through
+              stunning snapshots that capture the essence of each experience.</p>
+          </div>
+          <div class="col-md-4"><i class="flaticon-suntour-photo title-icon"></i></div>
+        </div>
+        <div class="row portfolio-grid">
+          <!-- portfolio item-->
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="portfolio-item big">
+              <!-- portfolio image--><a href="./img/gallery/Dubai.webp" class="fancy">
+                <div class="portfolio-media"><img src="./img/gallery/Dubai.webp" data-at2x="./img/gallery/Dubai.webp"
+                    alt></div>
+              </a>
+              <div class="links"><a href="./img/gallery/Dubai.webp" class="fancy"><i class="fa fa-expand"></i></a></div>
+            </div>
+          </div>
+          <!-- portfolio item-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="portfolio-item">
+              <!-- portfolio image--><a href="./img/gallery/USA.webp" class="fancy">
+                <div class="portfolio-media"><img src="./img/gallery/USA.webp" data-at2x="./img/gallery/USA.webp" alt>
+                </div>
+              </a>
+              <div class="links"><a href="./img/gallery/USA.webp" class="fancy"><i class="fa fa-expand"></i></a></div>
+            </div>
+          </div>
+          <!-- portfolio item-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="portfolio-item">
+              <!-- portfolio image--><a href="./img/gallery/australia.webp" class="fancy">
+                <div class="portfolio-media"><img src="./img/gallery/australia.webp"
+                    data-at2x="./img/gallery/australia.webp" alt></div>
+              </a>
+              <div class="links"><a href="./img/gallery/australia.webp" class="fancy"><i class="fa fa-expand"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio item-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="portfolio-item">
+              <!-- portfolio image--><a href="./img/gallery/jpan.webp" class="fancy">
+                <div class="portfolio-media"><img src="./img/gallery/jpan.webp" data-at2x="./img/gallery/jpan.webp" alt>
+                </div>
+              </a>
+              <div class="links"><a href="./img/gallery/jpan.webp" class="fancy"><i class="fa fa-expand"></i></a></div>
+            </div>
+          </div>
+          <!-- portfolio item-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="portfolio-item">
+              <!-- portfolio image--><a href="./img/gallery/paris.webp" class="fancy">
+                <div class="portfolio-media"><img src="./img/gallery/paris.webp" data-at2x="./img/gallery/paris.webp"
+                    alt></div>
+              </a>
+              <div class="links"><a href="./img/gallery/paris.webp" class="fancy"><i class="fa fa-expand"></i></a></div>
+            </div>
+          </div>
+          <!-- portfolio item-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="portfolio-item">
+              <!-- portfolio image--><a href="./img/gallery/portucal.webp" class="fancy">
+                <div class="portfolio-media"><img src="./img/gallery/portucal.webp"
+                    data-at2x="./img/gallery/portucal.webp" alt></div>
+              </a>
+              <div class="links"><a href="./img/gallery/portucal.webp" class="fancy"><i class="fa fa-expand"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio item-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="portfolio-item">
+              <!-- portfolio image--><a href="./img/gallery/tailand.webp" class="fancy">
+                <div class="portfolio-media"><img src="./img/gallery/tailand.webp"
+                    data-at2x="./img/gallery/tailand.webp" alt></div>
+              </a>
+              <div class="links"><a href="./img/gallery/tailand.webp" class="fancy"><i class="fa fa-expand"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio item-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="portfolio-item">
+              <!-- portfolio image--><a href="./img/gallery/china.webp" class="fancy">
+                <div class="portfolio-media"><img src="./img/gallery/china.webp" data-at2x="./img/gallery/china.webp"
+                    alt></div>
+              </a>
+              <div class="links"><a href="./img/gallery/china.webp" class="fancy"><i class="fa fa-expand"></i></a></div>
+            </div>
+          </div>
+          <!-- portfolio item-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="portfolio-item">
+              <!-- portfolio image--><a href="./img/gallery/usa-2.webp" class="fancy">
+                <div class="portfolio-media"><img src="pic/portfolio/285x285-8.jpg" data-at2x="./img/gallery/usa-2.webp"
+                    alt></div>
+              </a>
+              <div class="links"><a href="./img/gallery/usa-2.webp" class="fancy"><i class="fa fa-expand"></i></a></div>
+            </div>
+          </div>
+          <!-- portfolio item-->
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="portfolio-item big">
+              <!-- portfolio image--><a href="./img/gallery/rassia.webp" class="fancy">
+                <div class="portfolio-media"><img src="./img/gallery/rassia.webp" data-at2x="./img/gallery/rassia.webp"
+                    alt></div>
+              </a>
+              <div class="links"><a href="./img/gallery/rassia.webp" class="fancy"><i class="fa fa-expand"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ! gallery section-->
+    <!-- latest news-->
+
+    <!-- ! latest news-->
+    <!-- call out section-->
+    <!-- <section class="page-section pt-90 pb-80 bg-main pattern relative" style="background-color: #184b80;">
+        <div class="container">
+          <div class="call-out-box clearfix with-icon">
+            <div class="row call-out-wrap">
+              <div class="col-md-5">
+                <h6 class="title-section-top gray font-4">subscribe today</h6>
+                <h2 class="title-section alt-2"><span>Get</span> Latest offers</h2><i class="flaticon-suntour-email call-out-icon" style="color: #fff;"></i>
+              </div>
+              <div class="col-md-7">
+                <form action="php/contacts-process.php" method="post" class="form contact-form mt-10">
+                  <div class="input-container">
+                    <input type="text" placeholder="Enter your email" value="" name="email" class="newsletter-field mb-0 form-row"><i class="flaticon-suntour-email icon-left"></i>
+                    <button type="submit" class="subscribe-submit"><i class="flaticon-suntour-arrow icon-right"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <!-- ! call out section-->
+  </div>
+  <!-- footer-->
+  <!-- Footer Section -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Company Logo and Description -->
+        <div class="footer-logo">
+          <img src="./img/logo-white.png" alt="Company Logo" class="logo-img">
+          <p style="text-align: justify;">Welcome to YEZ GO - The Travel Company. With over 15 years of experience in the tourism industry, we take
+            pride in delivering quality, affordable, and hassle-free travel experiences worldwide. Each of our tours is
+            thoughtfully designed to offer authentic destinations and memorable holidays, made possible through the
+            continued support and trust of our valued customers.</p>
+
+          <!-- Social Media Icons -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/yezgotours" target="_blank" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+              </svg>
+            </a>
+            <!--  -->
+            <a href="https://youtube.com/@yezgo5770?si=yf96BiglTGvIeZgc" target="_blank" class="social-link" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              </svg>
+            </a>
+
+            <!--  -->
+            <a href="https://www.instagram.com/yezgotours" target="_blank" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="footer-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="footer-contact">
+          <h3>Contact Details</h3>
+          <div class="contact-detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b0b8c5" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>YEZGO TOURS & TRAVELS<br>Kochi | Thrissur</span>
+          </div>
+          <div class="contact-detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b0b8c5" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>info@yezgotours.com</span>
+          </div>
+          <div class="contact-detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b0b8c5" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            <span>+91 9747966777</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>Copyright 2025. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .footer {
+      background-color: #1a2b4c;
+      color: #fff;
+      padding: 60px 0 20px;
+      margin-top: 50px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-logo .logo-img {
+      height: 60px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .footer-logo p {
+      color: #b0b8c5;
+      margin-bottom: 25px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* Social Media Styles */
+    .social-media {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #b0b8c5;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-link:hover {
+      background: #ce3719;
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(77, 171, 247, 0.3);
+    }
+
+    .footer-links h3,
+    .footer-contact h3 {
+      font-size: 20px;
+      margin-bottom: 25px;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+    }
+
+    .footer-links h3::after,
+    .footer-contact h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 40px;
+      height: 3px;
+      background-color: #ce3719;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: #b0b8c5;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      position: relative;
+      padding-left: 15px;
+    }
+
+    .footer-links a::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: #ce3719;
+      font-weight: bold;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+      transform: translateX(5px);
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      color: #b0b8c5;
+    }
+
+    .contact-detail svg {
+      margin-right: 10px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2a3b5c;
+      padding-top: 20px;
+      text-align: center;
+      color: #b0b8c5;
+      font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .footer {
+        padding: 40px 0 20px;
+      }
+
+      .footer-logo .logo-img {
+        height: 50px;
+      }
+
+      .social-media {
+        justify-content: center;
+      }
+    }
+  </style>
+
+
+
+
+  <!-- <div id="scroll-top" style="background-color: #ce3719;"><i class="fa fa-angle-up" style="color: #fff;"></i></div> -->
+  <!-- ! footer-->
+  <!-- login popup-->
+  <div class="login-popup">
+    <div class="login-popup-wrap">
+      <div class="title-wrap">
+        <h2>Login</h2><i class="close-button flaticon-close"></i>
+      </div>
+      <div class="login-content">
+        <form class="form">
+          <input type="text" name="email" value="" size="40" placeholder="Enter Your Email ..." aria-required="true"
+            class="form-row form-row-first">
+          <input type="text" name="password" value="" size="40" placeholder="Enter Your Password ..."
+            aria-required="true" class="form-row form-row-last">
+        </form>
+        <div class="remember">
+          <div class="checkbox">
+            <input id="checkbox30" type="checkbox" value="None" name="check">
+            <label for="checkbox30">Remember Me</label>
+          </div><a href="#">Forgot Password ?</a>
+        </div><a href="#" class="cws-button gray alt full-width mt-20">Login now</a>
+      </div>
+      <div class="login-bot">
+        <p>No account yet? <a href="#">Register now</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- ! login popup-->
+  <!-- news popup-->
+  <div class="news-popup">
+    <div class="news-popup-wrap"> <i class="close-button flaticon-close"></i>
+      <div class="row">
+        <div class="col-sm-6"><img src="pic/news-popup.jpg" data-at2x="pic/news-popup@2x.jpg" alt></div>
+        <div class="col-sm-6">
+          <div class="news-content">
+            <div class="news-title">
+              <h2>Newsletter</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            </div>
+            <form method="get" action="#" class="newsletter contact-form">
+              <label class="mb-0">
+                <input type="text" placeholder="Enter Your Email ..." value="" name="email"
+                  class="newsletter-field mb-0">
+              </label>
+              <button type="submit" class="newsletter-submit cws-button alt">Submit</button>
+            </form>
+            <div class="checkbox-wrap">
+              <div class="checkbox">
+                <input id="checkbox40" type="checkbox" value="None" name="check">
+                <label for="checkbox40">Dont Show This Message Again</label>
+              </div>
+            </div>
+            <div class="social-wrap"><a href="#" class="cws-social flaticon-social-4"></a><a href="#"
+                class="cws-social flaticon-social"></a><a href="#" class="cws-social flaticon-social-3"></a><a href="#"
+                class="cws-social flaticon-social-1"></a><a href="#" class="cws-social flaticon-social-network"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ! news popup-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://www.youtube.com/player_api"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/jquery.sticky.js"></script>
+  <script type="text/javascript" src="js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/cws_parallax.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+  <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/jquery.form.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/bg-video/cws_self_vimeo_bg.js"></script>
+  <script type="text/javascript" src="js/bg-video/jquery.vimeo.api.min.js"></script>
+  <script type="text/javascript" src="js/bg-video/cws_YT_bg.js"></script>
+  <script type="text/javascript" src="js/jquery.tweet.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript" src="tuner/js/colorpicker.js"></script>
+  <script type="text/javascript" src="tuner/js/scripts.js"></script>
+  <script type="text/javascript" src="js/retina.min.js"></script>
+</body>
+
+</html>
